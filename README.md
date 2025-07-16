@@ -1,8 +1,8 @@
-# **All** (Proyecto Personal)
+# **<All>** (Proyecto Personal)
 
 ## Descripción
 
-**All>** es una aplicación web desarrollada con **React-Native**, 
+**<All>** es una aplicación web desarrollada con **React-Native**, 
 como parte de un proyecto personal en el cual aprendiendo mas
 sobre este lengua para aplicaciones moviles. 
 Esta es la primera versión del aplicativo.
