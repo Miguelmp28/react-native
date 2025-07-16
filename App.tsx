@@ -1,13 +1,15 @@
+import 'react-native-reanimated';
 import React from "react";
 import { StyleSheet } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { Ionicons } from "@expo/vector-icons";
 import { LinearGradient } from "expo-linear-gradient";
+import Toast from 'react-native-toast-message';
 
-import Home from "./src/screens/home";
-import Search from "./src/screens/search";
-import Download from "./src/screens/download";
+import Habitos from "./src/screens/habitos";
+import Galeria from "./src/screens/galeria";
+import Gastos from "./src/screens/gastos";
 
 const Tab = createBottomTabNavigator();
 
@@ -21,7 +23,7 @@ export default function App() {
     >
       <NavigationContainer>
         <Tab.Navigator
-          initialRouteName="Home"
+          initialRouteName="Gastos"
           screenOptions={({ route }) => ({
             tabBarStyle: {
               backgroundColor: "transparent",
@@ -30,27 +32,28 @@ export default function App() {
               position: "absolute",
             },
             tabBarIcon: ({ color, size }) => {
-              if (route.name === "Inicio") {
-                return <Ionicons name="home" size={size} color={'white'} />;
+              if (route.name === "Gastos") {
+                return <Ionicons name="cash" size={size} color={'white'} />;
               }
-              if (route.name === "Buscar") {
-                return <Ionicons name="search" size={size} color={'white'} />;
+              if (route.name === "Hábitos") {
+                return <Ionicons name="checkbox" size={size} color={'white'} />;
               }
-              if (route.name === "Descargar") {
-                return <Ionicons name="download" size={size} color={'white'} />;
+              if (route.name === "Galería") {
+                return <Ionicons name="images" size={size} color={'white'} />;
               }
               return null;
             },
             headerShown: false,
           })}
         >
-          <Tab.Screen name="Inicio" component={Home} />
-          <Tab.Screen name="Buscar" component={Search} />
-          <Tab.Screen name="Descargar" component={Download} />
+          <Tab.Screen name="Gastos" component={Gastos} />
+          <Tab.Screen name="Hábitos" component={Habitos} />
+          <Tab.Screen name="Galería" component={Galeria} />
         </Tab.Navigator>
       </NavigationContainer>
+      <Toast />
     </LinearGradient>
-  );
+  ); 
 }
 
 const styles = StyleSheet.create({

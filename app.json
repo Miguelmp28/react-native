@@ -1,14 +1,13 @@
 {
   "expo": {
-    "name": "shopify",
+    "name": "</All>",
     "slug": "shopify",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "https://img.freepik.com/fotos-premium/papel-tapiz-oscuro-logotipo-el_1020200-25349.jpg",
     "userInterfaceStyle": "light",
-    "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "https://img.freepik.com/fotos-premium/papel-tapiz-oscuro-logotipo-el_1020200-25349.jpg",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -17,14 +16,14 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "https://img.freepik.com/fotos-premium/papel-tapiz-oscuro-logotipo-el_1020200-25349.jpg",
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
       "package": "com.miguelmp.shopify"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "https://img.freepik.com/fotos-premium/papel-tapiz-oscuro-logotipo-el_1020200-25349.jpg"
     },
     "extra": {
       "eas": {
